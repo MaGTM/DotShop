@@ -1,0 +1,39 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wrapper input {
+  border: none;
+  font-size: 20px;
+  padding-left: 5px;
+}
+.wrapper input:focus {
+  outline: none;
+  border: 2px #4654A3 solid;
+}
+.wrapper .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #CE0202;
+  color: white;
+  width: 310px;
+  height: 44px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  left: 110%;
+}
+.wrapper .error svg {
+  position: absolute;
+  left: -2.3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .errorInput {
+  border: 2px #CE0202 solid;
+}
+
+/*# sourceMappingURL=inputForm.module.css.map */

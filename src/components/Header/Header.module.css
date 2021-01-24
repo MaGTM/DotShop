@@ -1,0 +1,122 @@
+.wrapper {
+  width: 1590px;
+  height: 70.94px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 86.1px;
+}
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper .searchInput {
+  width: 786px;
+  height: 47px;
+  margin-left: 51px;
+  margin-right: 205px;
+  position: relative;
+}
+.wrapper .searchInput svg {
+  position: absolute;
+  left: 93.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.wrapper .searchInput input {
+  width: 786px;
+  height: 47px;
+  border: none;
+  background-color: #E6E9F5;
+  color: black;
+  font-size: 28px;
+  font-weight: 300;
+  padding: 7px 0 6px 12px;
+  letter-spacing: 1.5px;
+  border-radius: 2px;
+}
+.wrapper .searchInput input:focus {
+  outline: none;
+  border: 2px #4654A3 solid;
+}
+.wrapper .searchInput input::placeholder {
+  color: #A5A5A5;
+}
+.wrapper .menu {
+  display: flex;
+  justify-content: space-between;
+  width: 331px;
+}
+.wrapper .menu a {
+  text-decoration: none;
+  color: #270949;
+}
+.wrapper .menu .item {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper .menu .item.account {
+  width: 53px;
+  position: relative;
+}
+.wrapper .menu .item.account .modalWrapper {
+  position: absolute;
+  top: 120%;
+  z-index: 100;
+  overflow: hidden;
+  transition: height 0.2s;
+  height: 0;
+}
+.wrapper .menu .item.account .modalWrapper .modalContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 174px;
+  border: 2px #4654A3 solid;
+  background: #E6E9F5;
+  font-weight: 500;
+  font-size: 22px;
+}
+.wrapper .menu .item.account .modalWrapper .modalContent .modalLogin {
+  color: white;
+  width: 190px;
+  height: 47px;
+  background: #F95B3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 0.2s;
+}
+.wrapper .menu .item.account .modalWrapper .modalContent .modalLogin:hover {
+  filter: brightness(0.7);
+}
+.wrapper .menu .item.account .modalWrapper .modalContent .modalRegister {
+  width: 190px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px #F95B3D solid;
+  transition: filter 0.2s;
+}
+.wrapper .menu .item.account .modalWrapper .modalContent .modalRegister:hover {
+  filter: brightness(0.7);
+}
+.wrapper .menu .item.compare {
+  width: 87px;
+}
+.wrapper .menu .item.cart {
+  width: 41px;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

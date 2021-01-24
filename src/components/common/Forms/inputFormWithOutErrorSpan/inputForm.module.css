@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wrapper input {
+  border: none;
+  font-size: 20px;
+  padding-left: 5px;
+}
+.wrapper input:focus {
+  outline: none;
+  border: 2px #4654A3 solid;
+}
+.wrapper .errorInput {
+  border: 2px #CE0202 solid;
+}
+
+/*# sourceMappingURL=inputForm.module.css.map */

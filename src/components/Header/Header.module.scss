@@ -1,0 +1,137 @@
+.wrapper {
+  width: 1590px;
+  height: 70.94px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 86.1px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .searchInput {
+    width: 786px;
+    height: 47px;
+    margin-left: 51px;
+    margin-right: 205px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 93.5%;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    input {
+      width: 786px;
+      height: 47px;
+      border: none;
+      background-color: #E6E9F5;
+      color: black;
+      font-size: 28px;
+      font-weight: 300;
+      padding: 7px 0 6px 12px;
+      letter-spacing: 1.5px;
+      border-radius: 2px;
+
+      &:focus {
+        outline: none;
+        border: 2px #4654A3 solid;
+      }
+
+      &::placeholder {
+        color: #A5A5A5;
+      }
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 331px;
+    a {
+      text-decoration: none;
+      color: #270949;
+    }
+
+    .item {
+      height: 54px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      user-select: none;
+
+      &.account {
+        width: 53px;
+        position: relative;
+
+        .modalWrapper {
+          position: absolute;
+          top: 120%;
+          z-index: 100;
+          overflow: hidden;
+          transition: height 0.2s;
+          height: 0;
+
+          .modalContent {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px;
+            height: 174px;
+            border: 2px #4654A3 solid;
+            background: #E6E9F5;
+            font-weight: 500;
+            font-size: 22px;
+
+            .modalLogin {
+              color: white;
+              width: 190px;
+              height: 47px;
+              background: #F95B3D;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: filter 0.2s;
+
+              &:hover {
+                filter: brightness(0.7);
+              }
+            }
+
+            .modalRegister {
+              width: 190px;
+              height: 47px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 5px #F95B3D solid;
+              transition: filter 0.2s;
+
+              &:hover {
+                filter: brightness(0.7);
+              }
+            }
+          }
+        }
+      }
+
+      &.compare {
+        width: 87px;
+      }
+
+      &.cart {
+        width: 41px;
+      }
+    }
+  }
+}

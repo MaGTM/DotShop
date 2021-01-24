@@ -1,0 +1,138 @@
+.wrapper {
+  width: 1322px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 50px;
+
+  h1 {
+    position: absolute;
+    top: -60px;
+  }
+
+  .formWrapper {
+    background: #E6E9F5;
+    width: 920px;
+    height: 514px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+
+    .item {
+      margin-top: 35px;
+
+      input {
+        width: 780px;
+        height: 44px;
+      }
+
+      label {
+        display: block;
+        color: #270949;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+    }
+
+    .rememberMe {
+      display: flex;
+      align-items: center;
+      width: 780px;
+      color: #270949;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 30px;
+      margin-bottom: 54px;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      label {
+        user-select: none;
+        cursor: pointer;
+        width: 26.28px;
+        height: 26.28px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        svg {
+          .checkedArrow {
+            fill: none;
+          }
+        }
+      }
+
+      input:checked + label {
+        .checkedArrow {
+          fill: #270949;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .loginError {
+        color: #CE0202;
+        font-size: 20px;
+        font-weight: 500;
+        width: 780px;
+      }
+
+      button {
+        width: 310px;
+        height: 60px;
+        background: #4654A3;
+        color: White;
+        border: none;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        margin-top: 14px;
+        position: relative;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:disabled {
+          background: #E6E9F5;
+          color: #4654A3;
+          border: #270949 2px solid;
+        }
+
+        svg {
+          circle {
+            animation: fadeInOut 1s infinite linear;
+
+            @keyframes fadeInOut {
+              0%, 100% {
+                stroke-dashoffset: 125;
+              }
+              50% {
+                stroke-dashoffset: 0;
+              }
+              50.0001% {
+                stroke-dashoffset: 250;
+              }
+            }
+          }
+        }
+      }
+
+      a {
+        color: #270949;
+        text-decoration: underline;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
