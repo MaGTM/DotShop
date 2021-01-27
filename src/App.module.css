@@ -1,19 +1,36 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
+
 * a {
   text-decoration: none;
 }
+
 * ul {
   list-style: none;
 }
 
 svg circle {
-  animation: fadeInOut 1s infinite linear;
+  -webkit-animation: fadeInOut 1s infinite linear;
+          animation: fadeInOut 1s infinite linear;
 }
+
+@-webkit-keyframes fadeInOut {
+  0%, 100% {
+    stroke-dashoffset: 125;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  50.0001% {
+    stroke-dashoffset: 250;
+  }
+}
+
 @keyframes fadeInOut {
   0%, 100% {
     stroke-dashoffset: 125;
@@ -28,26 +45,37 @@ svg circle {
 
 .wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 25px;
   min-height: 100vh;
   width: 100%;
 }
+
 .wrapper .content {
   width: 1590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .wrapper h1 {
   font-size: 40px;
   font-weight: 700;
   color: #270949;
 }
+
 .wrapper h2 {
   font-size: 20px;
   font-weight: 400;
   color: #270949;
 }
-
 /*# sourceMappingURL=App.module.css.map */

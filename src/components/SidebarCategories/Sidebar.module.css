@@ -2,25 +2,38 @@
   width: 217px;
   height: 198px;
   background: #E6E9F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 2px;
 }
+
 .wrapper h2 {
   padding: 4px 60px 21px 61px;
 }
+
 .wrapper .listWrapper ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #270949;
   font-weight: 300;
   font-size: 14px;
   margin-top: 10px;
   width: 192px;
 }
+
 .wrapper .listWrapper ul a li {
   margin-right: 10px;
 }
-
 /*# sourceMappingURL=Sidebar.module.css.map */

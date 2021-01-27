@@ -3,57 +3,89 @@
   height: 210px;
   background: #E6E9F5;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .wrapper p, .wrapper a {
   color: #270949;
   font-weight: 300;
   font-size: 14px;
 }
+
 .wrapper .footer {
   width: 1590px;
   height: 100%;
   padding: 12px 0px 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .wrapper .footer .contacts {
   width: 120px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .wrapper .footer .contacts img {
   width: 117px;
 }
+
 .wrapper .footer .contacts .icons {
   width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .wrapper .footer .contacts .icons svg {
   cursor: pointer;
 }
+
 .wrapper .footer .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .wrapper .footer .footerContent .item {
   margin-left: 268px;
   width: 134px;
 }
+
 .wrapper .footer .footerContent .item h2 {
   margin-bottom: 24px;
 }
+
 .wrapper .footer .footerContent .item li {
   margin-bottom: 7px;
 }
+
 .wrapper .footer .footerContent .partners {
   width: 300px;
 }
+
 .wrapper .footer .footerContent .partners a {
   margin-right: 25px;
 }
-
 /*# sourceMappingURL=Footer.module.css.map */

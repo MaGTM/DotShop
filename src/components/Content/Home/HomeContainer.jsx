@@ -4,7 +4,8 @@ import Home from "./Home";
 
 let mstp = (state) => {
     return {
-
+        sliderData: state.homePageReducer.sliderData,
+        hotOffersData: state.homePageReducer.hotOffersData,
     }
 }
 
